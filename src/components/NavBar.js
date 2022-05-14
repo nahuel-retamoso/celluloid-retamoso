@@ -4,12 +4,12 @@ import './NavBar.css';
 function NavBar() {
     return (
         <nav>
-            <img src="https://freesvg.org/img/tikigiki_filmstrip-01.png" id="logo" alt="logo" />
+            <img src="https://freesvg.org/img/tikigiki_filmstrip-01.png" className="logo" alt="logo" />
             <h1>Celluloid</h1>
-            <div id='navbar-sections'>
-                <button class="nav-button">Explorar</button>
-                <button class="nav-button">Favoritos</button>
-                <button class="nav-button">Mi Cuenta</button>
+            <div className='navbar-sections'>
+                <button className="nav-button">Explorar</button>
+                <button className="nav-button">Favoritos</button>
+                <button className="nav-button">Mi Cuenta</button>
             </div>
             
         </nav>

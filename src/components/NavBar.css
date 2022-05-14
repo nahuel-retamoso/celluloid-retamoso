@@ -6,7 +6,7 @@ nav {
     background-color: rgb(78, 104, 126);
 }
 
-#logo {
+.logo {
     height: 70px;
     width: 70px;
     margin-left: 20px;
@@ -23,7 +23,7 @@ h1 {
     font-size: 35px;
 }
 
-#navbar-sections {
+.navbar-sections {
     display: inline;
     width: 30%;
     height: 70px;
