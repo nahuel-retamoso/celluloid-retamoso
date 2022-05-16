@@ -1,4 +1,5 @@
 import './NavBar.css';
+import CartWidget from './CartWidget';
 
 
 function NavBar() {
@@ -11,6 +12,7 @@ function NavBar() {
                 <button className="nav-button">Favoritos</button>
                 <button className="nav-button">Mi Cuenta</button>
             </div>
+            <CartWidget/>
             
         </nav>
     );
