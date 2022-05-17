@@ -13,7 +13,7 @@ nav {
     display: inline;
 }
 
-h1 {
+.name {
     display: inline;
     margin-left: 20px;
     margin-top: 10px;
