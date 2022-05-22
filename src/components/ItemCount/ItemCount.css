@@ -1,0 +1,13 @@
+.ItemCount {
+    display: flex;
+    height: 50px;
+    background-color: aqua;
+    align-items: center;
+}
+
+.Display {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+}
