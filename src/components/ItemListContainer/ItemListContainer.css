@@ -1,8 +1,16 @@
-.Item {
-    background-color: rgb(102, 118, 133);
-    width: 300px;
-    height: 300px;
+.ItemListContainer {
+    background-color:white;
+    width: 94%;
+    height: 75vh;
     padding: 20px;
     border-radius: 5px;
     margin: 20px;
+}
+
+.ItemListContainer h1 {
+    font-size: 20px;
+}
+
+.ItemContainer {
+    display: flex;
 }

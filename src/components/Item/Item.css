@@ -1,0 +1,18 @@
+.Item {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+}
+
+.Item img {
+    width: 100px;
+    height: 100px;
+}
+
+.Item h1 {
+    font-size: 17px;
+}
+
+.Item:hover {
+    background-color: grey;
+}

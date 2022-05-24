@@ -18,9 +18,12 @@ function ItemCount (props) {
 
     return (
         <div className="ItemCount">
-            <Button onAdd={ decrement }>-</Button>
-            <p className='Display'>{count}</p>
-            <Button onAdd={ increment }>+</Button>
+            <div className='Controls'>
+                <Button onAdd={ decrement }>-</Button>
+                <p className='Display'>{count}</p>
+                <Button onAdd={ increment }>+</Button>
+            </div>
+            <button className='Agregar'>Agregar al carrito</button>
         </div>
     );
 }

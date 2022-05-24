@@ -5,7 +5,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 function App() {
   return (
     <div className="App">
-      <ItemListContainer greeting="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor."/>
+      <ItemListContainer greeting="Lorem ipsum dolor sit amet"/>
     </div>
   );
 }
