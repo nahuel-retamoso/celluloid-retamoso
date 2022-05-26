@@ -25,11 +25,4 @@ const Products = [
     }
 ]
 
-export function getProducts () {
-    return new Promise ((resolve) => {
-        setTimeout(() => {
-            resolve(Products);
-        }, 3000)
-    }
-    )
-}
+export default Products;
