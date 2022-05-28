@@ -1,0 +1,15 @@
+.ItemDetail {
+    width: 75%;
+    float: left;
+}
+
+.ItemImg  {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.Description {
+    width: 50%;
+    margin-left: 150px;
+}

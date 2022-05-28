@@ -4,6 +4,7 @@ const Products = [
         name : 'Gol trend',
         price : 4000000,
         img : 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/xl/RT_V_2103cf5ea8894b65a193bfddd1bca03f.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pretium nisi. Aenean nunc nunc, pulvinar quis euismod quis, commodo in risus. Nunc mattis pellentesque tortor vitae volutpat. Nam pulvinar purus neque, quis interdum turpis fringilla vitae. Nam tincidunt nec lorem id bibendum. Vestibulum eget facilisis lorem, sit amet accumsan.'
     },
     {
         id : '2',
