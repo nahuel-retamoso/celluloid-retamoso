@@ -19,6 +19,8 @@ Esta ruta va a estar renderizando el compomente ***ItemDetailContainer*** con el
 ***/category/:id***
 Esta ruta va a estar renderizando el componente ***ItemListContainer*** con los items filtrados ***por categoria***.
 
+![categories](https://user-images.githubusercontent.com/34424810/171337666-01936032-bab3-4c14-ad39-7ea6ba130b45.gif)
+
 ***/***
 Esta ruta va a estar renderizando el componente ***ItemListContainer*** con todos los items del inventario.
 
