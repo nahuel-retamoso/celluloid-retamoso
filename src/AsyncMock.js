@@ -1,28 +1,35 @@
 const Products = [
     {
+        id : '0',
+        name : 'Ilford HP 5 Plus 135/36',
+        price : 5000,
+        type : 'b&w',
+        img : 'https://www.tradeinn.com/f/13785/137855710/ilford-hp-5-plus-135-36.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pretium nisi. Aenean nunc nunc, pulvinar quis euismod quis, commodo in risus. Nunc mattis pellentesque tortor vitae volutpat. Nam pulvinar purus neque, quis interdum turpis fringilla vitae. Nam tincidunt nec lorem id bibendum. Vestibulum eget facilisis lorem, sit amet accumsan.'
+    },
+    {
         id : '1',
-        name : 'Gol trend',
-        price : 4000000,
-        img : 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/xl/RT_V_2103cf5ea8894b65a193bfddd1bca03f.jpg',
+        name : 'Ilford FP-4 Plus 135/24',
+        price : 5000,
+        type : 'b&w',
+        img : 'https://www.tradeinn.com/f/13785/137855708/ilford-fp-4-plus-135-24.jpg',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pretium nisi. Aenean nunc nunc, pulvinar quis euismod quis, commodo in risus. Nunc mattis pellentesque tortor vitae volutpat. Nam pulvinar purus neque, quis interdum turpis fringilla vitae. Nam tincidunt nec lorem id bibendum. Vestibulum eget facilisis lorem, sit amet accumsan.'
     },
     {
         id : '2',
-        name : 'Toyota Corolla',
-        price : 4000000,
-        img : 'https://acroadtrip.blob.core.windows.net/catalogo-imagenes/l/RT_V_96df320cb38a4a258f20418527a3d5f7.jpg',
+        name : 'Kodak Gold 200',
+        price : 5000,
+        type : 'color',
+        img : 'https://m.media-amazon.com/images/I/61rm-hAkNeL._AC_SL1000_.jpg',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pretium nisi. Aenean nunc nunc, pulvinar quis euismod quis, commodo in risus. Nunc mattis pellentesque tortor vitae volutpat. Nam pulvinar purus neque, quis interdum turpis fringilla vitae. Nam tincidunt nec lorem id bibendum. Vestibulum eget facilisis lorem, sit amet accumsan.'
     },
     {
         id : '3',
-        name : 'Citroen C4 Cactus',
-        price : 4000000,
-        img : 'https://media.citroen.com.ar/image/62/2/c4cactus-vignette-vehicule-01.357622.png?vers=1',
-    },
-    {
-        id : '4',
-        name : 'Peugeout 208',
-        price : 4000000,
-        img : 'https://www.gruporobayna.com.ar/peugeot/img/info/7-208.jpeg',
+        name : 'Kodak Ultra Color 400',
+        price : 5000,
+        type : 'color',
+        img : 'https://http2.mlstatic.com/D_NQ_NP_736848-MLA49107401102_022022-O.webp',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pretium nisi. Aenean nunc nunc, pulvinar quis euismod quis, commodo in risus. Nunc mattis pellentesque tortor vitae volutpat. Nam pulvinar purus neque, quis interdum turpis fringilla vitae. Nam tincidunt nec lorem id bibendum. Vestibulum eget facilisis lorem, sit amet accumsan.'
     }
 ]
 

@@ -2,9 +2,13 @@ import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import { useState, useEffect } from 'react';
 import Products from "../../AsyncMock";
+import { useParams } from 'react-router-dom';
 
 
 function ItemListContainer (props) {
+
+    const category = useParams()
+    console.log(category.id)
 
     function getProducts () {
         return new Promise ((resolve) => {
@@ -15,14 +19,29 @@ function ItemListContainer (props) {
         )
     }
 
+    function getProductsByCategory () {
+        return new Promise ((resolve) =>{
+            setTimeout(()=> {
+                resolve(Products.filter(prod => prod.type === category.id));
+            }, 2000)
+        })
+    }
+
     const [products, setProducts] = useState([])
 
 
     useEffect(() => {
-        getProducts().then(response => {
-            setProducts(response)
-        })
-    }, [])
+        if(!category.id) {
+            getProducts().then(response => {
+                setProducts(response)
+            })
+        } else {
+            getProductsByCategory().then(response => {
+                setProducts(response)
+            })
+        }
+        
+    }, [category.id])
 
 
     return (
@@ -30,9 +49,7 @@ function ItemListContainer (props) {
             <h1>
             {props.greeting}
             </h1>
-            <div className='ItemContainer'>
-                <ItemList products = {products}/>
-            </div>
+            <ItemList products = {products}/>
             
         </div>
     )

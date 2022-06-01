@@ -1,7 +1,13 @@
 .Item {
-    width: 300px;
+    width: 200px;
     height: 200px;
-    background-color: white;
+    background-color: rgb(243, 243, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin: 5px;
 }
 
 .Item img {
@@ -13,6 +19,15 @@
     font-size: 17px;
 }
 
-.Item:hover {
-    background-color: grey;
+.detalle-button {
+    text-decoration: none;
+    background-color: rgb(252, 112, 112);
+    padding: 7px;
+    color: white;
+    margin: 10%;
+    border-radius: 2px;
+}
+
+.detalle-button:hover {
+    background-color: rgb(78, 104, 126);
 }

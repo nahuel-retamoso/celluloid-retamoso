@@ -2,13 +2,17 @@ import Products from "../../AsyncMock";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import ItemCount from "../ItemCount/ItemCount";
 import { useEffect, useState } from 'react';
+import { useParams } from "react-router-dom";
+import './ItemDetailContainer.css'
 
 function ItemDetailContainer () {
+
+    const product = useParams()
 
     function getItem () {
         return new Promise ((resolve) => {
             setTimeout(() => {
-                resolve(Products[0]);
+                resolve(Products[product.id]);
             }, 2000)
         })
     }
