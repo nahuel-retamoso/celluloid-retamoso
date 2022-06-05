@@ -4,26 +4,24 @@ import Button from '../Button/Button';
 
 function ItemCount (props) {
 
-    const [count, setCount] = useState(props.initial)
-
     const decrement = () => {
-        if (count > 0)
-            setCount ( count - 1)
+        if (props.count > 0)
+            props.set ( props.count - 1)
     }
 
     const increment = () => {
-        if (count < props.stock)
-            setCount ( count + 1)
+        if (props.count < props.stock)
+            props.set ( props.count + 1)
     }
 
     return (
         <div className="ItemCount">
             <div className='Controls'>
-                <Button onAdd={ decrement }>-</Button>
-                <p className='Display'>{count}</p>
-                <Button onAdd={ increment }>+</Button>
+                <Button Click={ decrement }>-</Button>
+                <p className='Display'>{props.count}</p>
+                <Button Click={ increment }>+</Button>
             </div>
-            <button className='Agregar'>Agregar al carrito</button>
+            <button className='Agregar' onClick={props.onAdd}>Agregar al carrito</button>
         </div>
     );
 }

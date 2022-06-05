@@ -3,7 +3,7 @@ import './Button.css'
 function Button (props) {
 
     return (
-        <button onClick={props.onAdd}>{props.children}</button>
+        <button onClick={props.Click}>{props.children}</button>
     )
 }
 
