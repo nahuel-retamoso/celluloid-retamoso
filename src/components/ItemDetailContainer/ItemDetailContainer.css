@@ -2,17 +2,3 @@
     align-items: center;
     display: flex;
 }
-
-.terminar {
-    text-decoration: none;
-    font-size: 20px;
-    background-color: rgb(143, 172, 250);
-    padding: 12px;
-    color: white;
-    margin: 10%;
-    white-space: nowrap;
-}
-
-.terminar:hover {
-    background-color: rgb(114, 150, 250);
-}

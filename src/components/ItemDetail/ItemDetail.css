@@ -1,5 +1,5 @@
 .ItemDetail {
-    width: 75%;
+    width: 100%;
     float: left;
     display: flex;
     align-items: center;
@@ -20,4 +20,19 @@
     align-items: center;
     width: 70%;
     padding-top: 5%;
+}
+
+
+.terminar {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(143, 172, 250);
+    padding: 12px;
+    color: white;
+    margin: 10%;
+    white-space: nowrap;
+}
+
+.terminar:hover {
+    background-color: rgb(114, 150, 250);
 }
