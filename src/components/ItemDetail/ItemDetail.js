@@ -6,7 +6,7 @@ import  CartContext  from '../CartContext/CartContext';
 
 function ItemDetail ({id, name, price, description, img}) {
 
-    const { addItem } = useContext(CartContext)
+    const { AddItem } = useContext(CartContext)
 
     const [ parentcount, setParentcount ] = useState(0)
 
@@ -14,7 +14,7 @@ function ItemDetail ({id, name, price, description, img}) {
     const OnAdd = (parentcount) => {
             setParentcount(parentcount);
             console.log(parentcount)
-            addItem({id, name, price, parentcount})
+            AddItem({id, name, price, parentcount})
     }
 
     return (

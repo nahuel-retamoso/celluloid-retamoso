@@ -14,30 +14,26 @@ export function CartContextProvider ({children}) {
     }
 
 
-
-    const addItem = (products) => {
-
-        // if(!inCart(products.id)) {
-            setCart([...cart, products])
-        // }
-        // else {
-        //     const newCart = cart.map(prod => {
-
-        //         if(prod.id === products.id) {
-        //             const newProduct = {...prod, parentcount: products.parentcount}
-        //             return newProduct
-            
-        //         } else {
-        //            return prod 
-        //         }
-        //     })
-        //     setCart(newCart)
-        // }
-    }
-
-    // const getItem = (id) => {
-    //     return cart.find(prod => prod.id === id)
-    // }
+      const AddItem = (products) => {
+          if(!inCart(products.id)) {
+              setCart([...cart, products])
+          }
+            else {
+              const newCart = cart.map(prod => {
+  
+                  if(prod.id === products.id) {
+                      const newProduct = {...prod, parentcount: products.parentcount}
+                      return newProduct
+              
+                  } else {
+                     return prod 
+                  }
+              })
+              setCart(newCart)
+          }
+      }
+      
+    
 
 
     const deleteItem = (id) => {
@@ -57,7 +53,7 @@ export function CartContextProvider ({children}) {
 
 
     return (
-        <CartContext.Provider value={{ addItem, widgetNumber, deleteItem, cart}}>
+        <CartContext.Provider value={{ AddItem, widgetNumber, deleteItem, cart}}>
             {children}
         </CartContext.Provider>
     )

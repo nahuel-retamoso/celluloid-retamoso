@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './ItemCount.css'
 import Button from '../Button/Button';
 
-function ItemCount (props) {
+function ItemCount ({stock, onAdd}) {
 
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
 
     const decrement = () => {
         if (count > 0)
@@ -12,7 +12,7 @@ function ItemCount (props) {
     }
 
     const increment = () => {
-        if ( count < props.stock)
+        if ( count < stock)
             setCount ( count + 1)
     }
 
@@ -23,7 +23,7 @@ function ItemCount (props) {
                 <p className='Display'>{count}</p>
                 <Button Click={ increment }>+</Button>
             </div>
-            <button className='Agregar' onClick={() => props.onAdd(count)}>Agregar al carrito</button>
+            <button className='Agregar' onClick={() => onAdd(count)}>Agregar al carrito</button>
         </div>
     );
 }

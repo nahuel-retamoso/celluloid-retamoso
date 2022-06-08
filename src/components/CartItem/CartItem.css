@@ -1,0 +1,11 @@
+.ItemCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.ItemCart p {
+    font-size: 18px;
+    margin: 8px;
+}
