@@ -28,16 +28,22 @@ function ItemListContainer (props) {
 
     const [products, setProducts] = useState([])
 
+    const [ load, setLoad ] = useState(true)
+
 
     useEffect(() => {
         if(!category.id) {
+            setLoad(true)
             getProducts().then(response => {
                 setProducts(response)
-            })
+                setLoad(false)
+            });
         } else {
+            setLoad(true)
             getProductsByCategory().then(response => {
                 setProducts(response)
-            })
+                setLoad(false)
+            });
         }
         
     }, [category.id])
@@ -48,8 +54,8 @@ function ItemListContainer (props) {
             <h1>
             {props.greeting}
             </h1>
-            <ItemList products = {products}/>
-            
+            {load === true && <div className="lds-facebook"><div></div><div></div><div></div></div>}
+            {load === false && <ItemList products = {products}/>}
         </div>
     )
 }

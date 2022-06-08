@@ -3,7 +3,8 @@
     height: 200px;
     width: 300px;
     float: right;
-    display: inline;
+    display: flex;
+    flex-direction: column;
     margin: 6%;
 }
 
@@ -24,4 +25,13 @@
     padding: 15px;
     width: auto;
     white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Agregar:hover {
+    background-color: rgb(146, 177, 206);
 }

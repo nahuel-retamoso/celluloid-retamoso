@@ -1,6 +1,6 @@
 .Item {
     width: 200px;
-    height: 200px;
+    height: auto;
     background-color: rgb(243, 243, 252);
     display: flex;
     flex-direction: column;
@@ -10,6 +10,10 @@
     margin: 5px;
 }
 
+.Item p {
+    margin-top: 2px;
+}
+
 .Item img {
     width: 100px;
     height: 100px;
@@ -17,6 +21,7 @@
 
 .Item h1 {
     font-size: 17px;
+    margin-top: 1%;
 }
 
 .detalle-button {
@@ -24,10 +29,10 @@
     background-color: rgb(252, 112, 112);
     padding: 7px;
     color: white;
-    margin: 10%;
+    margin-top: 10%;
     border-radius: 2px;
 }
 
 .detalle-button:hover {
-    background-color: rgb(78, 104, 126);
+    background-color: rgb(146, 177, 206);
 }

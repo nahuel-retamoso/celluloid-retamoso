@@ -26,13 +26,13 @@
 .terminar {
     text-decoration: none;
     font-size: 20px;
-    background-color: rgb(143, 172, 250);
-    padding: 12px;
+    background-color: rgb(146, 177, 206);
+    padding: 15px;
     color: white;
-    margin: 10%;
+    margin: 7%;
     white-space: nowrap;
 }
 
 .terminar:hover {
-    background-color: rgb(114, 150, 250);
+    background-color: rgb(165, 187, 207);
 }

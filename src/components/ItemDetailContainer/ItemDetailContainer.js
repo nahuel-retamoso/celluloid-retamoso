@@ -26,7 +26,8 @@ function ItemDetailContainer () {
 
     return (
         <div className="ItemDetailContainer" >
-            <ItemDetail {...detail}/>
+            {detail.length === 0 && <div className="lds-facebook"><div></div><div></div><div></div></div>}
+            {detail.length != 0 && <ItemDetail {...detail}/>}
         </div>
     )
 }
