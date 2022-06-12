@@ -25,14 +25,46 @@
 
 .terminar {
     text-decoration: none;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     font-size: 20px;
     background-color: rgb(146, 177, 206);
     padding: 15px;
     color: white;
-    margin: 7%;
+    margin-bottom: 6%;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .terminar:hover {
-    background-color: rgb(165, 187, 207);
+    background-color: red;
 }
+
+.seguirComprando {
+    text-decoration: none;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    font-size: 20px;
+    background-color: rgb(252, 112, 112);
+    padding: 15px;
+    color: white;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.seguirComprando:hover{
+    background-color: rgba(252, 112, 112, 0.712);
+}
+
+    .continuar {
+        display: flex;
+        flex-direction: column;
+        width: 26%;
+        margin: 6%;
+    }

@@ -1,7 +1,9 @@
 .ItemDetailContainer {
     align-items: center;
     justify-content: center;
+    text-align: center;
     display: flex;
+    height: 90vh;
 }
 
 .lds-facebook {

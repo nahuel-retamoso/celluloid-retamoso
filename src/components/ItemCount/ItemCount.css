@@ -1,7 +1,4 @@
 .ItemCount {
-    background-color: white;
-    height: 200px;
-    width: 300px;
     float: right;
     display: flex;
     flex-direction: column;
@@ -11,13 +8,20 @@
 .Controls {
     display: flex;
     align-items: center;
+    border-radius: 7px;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .Display {
+    display: flex;
     background-color: white;
     height: 50px;
     width: 100%;
     font-size: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .Agregar {
@@ -26,6 +30,9 @@
     width: auto;
     white-space: nowrap;
     color: white;
+    border-radius: 7px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     font-size: 20px;
     display: flex;
     align-items: center;

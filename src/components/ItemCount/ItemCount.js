@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import './ItemCount.css'
 import Button from '../Button/Button';
 
-function ItemCount ({stock, onAdd}) {
+function ItemCount ({stock, onAdd, initial = 1}) {
 
-    const [count, setCount] = useState(1)
+    const [count, setCount] = useState(initial)
 
     const decrement = () => {
-        if (count > 0)
+        if (count > 1)
             setCount ( count - 1)
     }
 

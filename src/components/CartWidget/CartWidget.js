@@ -13,7 +13,7 @@ function CartWidget () {
     return (
         <div className='Widget'>
             <img src={cart} className='CartImage' alt='Cart'/>
-            <Link to='/cart'><h1 className='Contador'>{quantity}</h1></Link>
+            <Link to='/cart'className='Contador'>{quantity}</Link>
         </div>
     )
 }

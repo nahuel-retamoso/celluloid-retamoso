@@ -6,14 +6,13 @@ import  CartContext  from '../CartContext/CartContext';
 
 function ItemDetail ({id, name, price, description, img}) {
 
-    const { AddItem } = useContext(CartContext)
+    const { AddItem, getItem } = useContext(CartContext)
 
     const [ parentcount, setParentcount ] = useState(0)
 
 
     const OnAdd = (parentcount) => {
             setParentcount(parentcount);
-            console.log(parentcount)
             AddItem({id, name, price, parentcount})
     }
 
@@ -25,7 +24,7 @@ function ItemDetail ({id, name, price, description, img}) {
                 <p className="Description">{description}</p>
             </div>
             <img className="ItemImg" alt="Item" src={img}/>
-            {parentcount > 0 ? <Link className='terminar' to='/cart'>Terminar compra</Link> : <ItemCount stock = '5' onAdd = {OnAdd}/>}
+            {parentcount > 0 ? <div className='continuar'><Link className='terminar' to='/cart'>Terminar compra</Link> <Link className='seguirComprando' to='/' >Seguir comprando</Link> </div> : <ItemCount stock = '5' onAdd = {OnAdd} initial = {getItem(id)?.parentcount} />}
         </div>
 
     )

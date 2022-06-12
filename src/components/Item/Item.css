@@ -1,13 +1,15 @@
 .Item {
     width: 200px;
     height: auto;
-    background-color: rgb(243, 243, 252);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2%;
     margin: 5px;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+    border-radius: 0.5em;
 }
 
 .Item p {
@@ -25,14 +27,42 @@
 }
 
 .detalle-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 8px;
+    color: #666666;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 14px;
     text-decoration: none;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .detalle-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 8px;
     background-color: rgb(252, 112, 112);
-    padding: 7px;
-    color: white;
-    margin-top: 10%;
-    border-radius: 2px;
-}
-
-.detalle-button:hover {
-    background-color: rgb(146, 177, 206);
-}
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .detalle-button:hover {
+    color: #e8e8e8;
+   }
+   
+   .detalle-button:hover::before {
+    width: 100%;
+   }

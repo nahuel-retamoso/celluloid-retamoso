@@ -7,8 +7,6 @@ export function CartContextProvider ({children}) {
     
     const [ cart, setCart ] = useState([])
 
-    console.log(cart)
-
     const inCart = (id) => {
         return cart.some(prod => prod.id === id)
     }
@@ -41,6 +39,9 @@ export function CartContextProvider ({children}) {
         setCart(deleteItem)
     }
 
+    const deleteCart = () => {
+        setCart([])
+    }
 
     const widgetNumber = () => {
         let accu = 0
@@ -51,9 +52,13 @@ export function CartContextProvider ({children}) {
         return accu
     }
 
+    const getItem = (id) => {
+        return cart.find(prod => prod.id === id)
+    }
+
 
     return (
-        <CartContext.Provider value={{ AddItem, widgetNumber, deleteItem, cart}}>
+        <CartContext.Provider value={{ AddItem, widgetNumber, deleteItem, cart, deleteCart, getItem }}>
             {children}
         </CartContext.Provider>
     )
