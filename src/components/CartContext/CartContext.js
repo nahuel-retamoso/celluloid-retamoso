@@ -56,9 +56,27 @@ export function CartContextProvider ({children}) {
         return cart.find(prod => prod.id === id)
     }
 
+    const totalValue = () => {
+        var total = 0;
+
+        if (cart.length > 0) {
+            for ( var i=0; i < cart.length; i++ ) {
+                total += cart[i].price * cart[i].parentcount
+            }
+            return total
+        }
+        else {
+            return total
+        }
+    }
+    
+    const itemsValue = (id) => {
+        var item = cart.find(item => item.id === id)
+        return item.price * item.parentcount
+    }
 
     return (
-        <CartContext.Provider value={{ AddItem, widgetNumber, deleteItem, cart, deleteCart, getItem }}>
+        <CartContext.Provider value={{ AddItem, widgetNumber, deleteItem, cart, deleteCart, getItem, totalValue, itemsValue }}>
             {children}
         </CartContext.Provider>
     )

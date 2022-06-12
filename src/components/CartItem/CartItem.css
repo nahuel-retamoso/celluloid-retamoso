@@ -1,10 +1,20 @@
-.ItemCart p {
+.itemName {
     font-size: 18px;
-    margin: 4px;
+    color: grey;
+    text-decoration: none;
+    margin-left: 30px;
 }
 
 .cant {
     background-color: rgb(207, 207, 207);
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+}
+
+.detailPrice {
+    margin-left: 20px;
+    background-color: rgb(144, 212, 150);
     padding: 7px;
     border-radius: 5px;
     color: white;
@@ -33,11 +43,10 @@
       margin-left: auto;
   }
 
-  /* From uiverse.io */
 .delete {
     width: 150px;
     height: 38px;
-    margin-left: 4px;
+    margin-left: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -54,7 +63,7 @@
    }
    
    .delete .text {
-    transform: translateX(35px);
+    transform: translateX(25px);
     color: white;
     font-weight: bold;
    }
@@ -62,7 +71,7 @@
    .delete .icon {
     position: absolute;
     border-left: 1px solid #c41b1b;
-    transform: translateX(110px);
+    transform: translateX(100px);
     height: 38px;
     width: 40px;
     display: flex;
@@ -84,7 +93,7 @@
    }
    
    .delete:hover .icon {
-    width: 150px;
+    width: 140px;
     border-left: none;
     transform: translateX(0);
    }

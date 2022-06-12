@@ -2,5 +2,130 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 85vh;
+    width: 100%;
+    padding-top: 2%;
 }
+
+.totalDetail {
+    background-color: rgb(144, 212, 150);
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteAll {
+    margin-top: 10px;
+    width: 200px;
+    height: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+    font-size: 18px;
+   }
+   
+   .deleteAll, button span {
+    transition: 200ms;
+   }
+   
+   .deleteAll .text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   .deleteAll .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 38px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .deleteAll svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .deleteAll:hover {
+    background: #ff3636;
+   }
+   
+   .deleteAll:hover .text {
+    color: transparent;
+   }
+   
+   .deleteAll:hover .icon {
+    width: 180px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   .deleteAll:focus {
+    outline: none;
+   }
+   
+   .deleteAll:active .icon svg {
+    transform: scale(0.8);
+   }
+
+   .vacio {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .explorar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 8px;
+    color: #666666;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .explorar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 8px;
+    background-color: rgb(252, 112, 112);
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .explorar:hover {
+    color: #e8e8e8;
+   }
+   
+   .explorar:hover::before {
+    width: 100%;
+   }
