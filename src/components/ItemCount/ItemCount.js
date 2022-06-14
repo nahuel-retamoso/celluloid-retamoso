@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ItemCount.css'
 import Button from '../Button/Button';
 
-function ItemCount ({stock, onAdd, initial = 1}) {
+function ItemCount ({stock, onAdd, initial}) {
 
     const [count, setCount] = useState(initial)
 

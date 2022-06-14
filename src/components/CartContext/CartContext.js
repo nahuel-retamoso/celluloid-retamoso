@@ -20,7 +20,7 @@ export function CartContextProvider ({children}) {
               const newCart = cart.map(prod => {
   
                   if(prod.id === products.id) {
-                      const newProduct = {...prod, parentcount: products.parentcount}
+                      const newProduct = {...prod, parentcount: products.parentcount + prod.parentcount}
                       return newProduct
               
                   } else {
