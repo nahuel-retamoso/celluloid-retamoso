@@ -12,22 +12,21 @@ export function CartContextProvider ({children}) {
     }
 
 
-      const AddItem = (products) => {
-          if(!inCart(products.id)) {
-              setCart([...cart, products])
+    const AddItem = (products) => {
+        if(!inCart(products.id)) {
+            setCart([...cart, products])
           }
-            else {
-              const newCart = cart.map(prod => {
+        else {
+            const newCart = cart.map(prod => {
   
-                  if(prod.id === products.id) {
-                      const newProduct = {...prod, parentcount: products.parentcount}
-                      return newProduct
-              
-                  } else {
-                     return prod 
-                  }
-              })
-              setCart(newCart)
+            if(prod.id === products.id) {
+                const newProduct = {...prod, parentcount: products.parentcount + prod.parentcount}
+                return newProduct
+            } else {
+                return prod 
+            }
+        })
+            setCart(newCart)
           }
       }
       

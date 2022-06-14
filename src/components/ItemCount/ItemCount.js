@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './ItemCount.css'
 import Button from '../Button/Button';
 
-function ItemCount ({stock, onAdd, initial = 1}) {
+function ItemCount ({stock, onAdd, cartQuantity}) {
 
-    const [count, setCount] = useState(initial)
+    const [count, setCount] = useState(1)
 
     const decrement = () => {
         if (count > 1)
@@ -18,6 +18,7 @@ function ItemCount ({stock, onAdd, initial = 1}) {
 
     return (
         <div className="ItemCount">
+            {cartQuantity > 0 && <h1 className='itemCartQuantity'>Tienes en el carrito: {cartQuantity}</h1>}
             <div className='Controls'>
                 <Button Click={ decrement }>-</Button>
                 <p className='Display'>{count}</p>

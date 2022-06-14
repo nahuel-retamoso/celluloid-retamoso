@@ -5,6 +5,11 @@
     margin: 6%;
 }
 
+.itemCartQuantity {
+    font-size: 16px;
+    color: grey;
+}
+
 .Controls {
     display: flex;
     align-items: center;
