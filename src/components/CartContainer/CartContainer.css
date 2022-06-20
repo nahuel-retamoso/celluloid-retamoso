@@ -129,3 +129,20 @@
    .explorar:hover::before {
     width: 100%;
    }
+
+   .Continuar {
+    background-color: rgb(108, 175, 246);
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+   }
+
+   .Continuar:hover {
+       background-color: rgb(63, 152, 247);
+   }
