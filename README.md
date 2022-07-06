@@ -13,7 +13,7 @@ Este proyecto es un ecommerce creado con `create-react-app`
 
 ###### Variables de entorno
 
-Ver [`.env.example`] de ejemplo.
+Ver [`.env.example`](https://github.com/Tumijiu/celluloid-retamoso/blob/final/.env.example) de ejemplo.
 
 #### Las rutas que contiene la aplicacion son:
 
