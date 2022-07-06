@@ -34,3 +34,5 @@ Esta ruta va a estar renderizando el componente ***ItemListContainer*** con todo
 
 ***/****
 Esta ruta va a estar renderizando un mensaje que indica que esa ***ruta no esta disponible***.
+
+![categories](https://user-images.githubusercontent.com/34424810/177454431-d63a30b8-24f8-457e-92a1-b65a23031745.gif)
