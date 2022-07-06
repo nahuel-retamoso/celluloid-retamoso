@@ -23,6 +23,12 @@ Esta ruta va a estar renderizando el compomente ***ItemDetailContainer*** con el
 ***/category/:id***
 Esta ruta va a estar renderizando el componente ***ItemListContainer*** con los items filtrados ***por categoria***.
 
+***/cart***
+Esta ruta muestra el carrito de compras con el listado de productos seleccionados.
+
+***/checkout***
+Esta ruta muestra un formulario para que el usuario deje sus datos para la orden de compra.
+
 ***/***
 Esta ruta va a estar renderizando el componente ***ItemListContainer*** con todos los items del inventario.
 
