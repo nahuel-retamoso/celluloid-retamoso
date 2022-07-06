@@ -2,8 +2,7 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import './ItemDetailContainer.css'
-import { getDoc, doc } from 'firebase/firestore'
-import { db } from '../../services/firebase/index'
+import { getProduct } from '../../services/firebase/firestore'
 
 function ItemDetailContainer () {
 
@@ -12,11 +11,11 @@ function ItemDetailContainer () {
     const [detail, setDetail] = useState ([])
 
     useEffect(() => {
-
-        getDoc(doc(db, 'ItemCollection', product.id)).then(response => {
-            const product = { id: response.id, ...response.data()}
-            setDetail(product)
+        
+        getProduct(product).then(response => {
+            setDetail(response)
         })
+
     }, [])
 
     return (
