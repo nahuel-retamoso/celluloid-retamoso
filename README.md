@@ -11,6 +11,10 @@ Este proyecto es un ecommerce creado con `create-react-app`
 
 ###### Y se va a estar visualizando en el ***http://localhost:3000/***
 
+###### Variables de entorno
+
+Ver [`.env.example`] de ejemplo.
+
 #### Las rutas que contiene la aplicacion son:
 
 ***/item/:id***
