@@ -1,0 +1,22 @@
+.OrderData {
+    background-color: rgb(226, 226, 226);
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+    padding: 20px;
+}
+
+.OrderData p {
+    font-size: 20px;
+
+}
+
+.RealizarOrden {
+    background-color: #6198ff;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 16px;
+    width: auto;
+}

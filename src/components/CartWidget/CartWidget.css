@@ -1,0 +1,26 @@
+.Widget {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.Widget:hover{
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+.CartImage {
+    width: 40px;
+    height: 40px;
+}
+
+.Contador {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}

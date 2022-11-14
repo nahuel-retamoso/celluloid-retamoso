@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import NavBar from './components/NavBar/NavBar';
+import CartContainer from './components/CartContainer/CartContainer';
+import { CartContextProvider } from './components/CartContext/CartContext'
+import Checkout from './components/Checkout/Checkout'
+
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <BrowserRouter>
+        <CartContextProvider>
+          <NavBar/>
+          <Routes>
+            <Route path='/' element={<ItemListContainer greeting= 'Todos los productos'/>} />
+            <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+            <Route path='/category/:id' element={<ItemListContainer/>} />
+            <Route path='/*' element={<h1>Page not found =(</h1>}/>
+            <Route path='/cart' element={<CartContainer/>} />
+            <Route path='/checkout' element={<Checkout/>} />
+          </Routes>
+        </CartContextProvider>
+      </BrowserRouter>
+
     </div>
-  );
+  )
 }
 
 export default App;
